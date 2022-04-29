@@ -54,16 +54,107 @@
 ## 2. Git 설치 및 설정
 
 ❗ 해당 자료는 Windows 기반을 기본으로 안내드리고있습니다. Mac OS를 사용하시는 분들께서는 [이곳](https://sin0824.tistory.com/8)을 참조하시면 좋을것같습니다.<br>
- :bangbang: 버전이 달라지는 경우 설치 및 설정 방법이 변할 수 있습니다. 해당 설치 및 설정은2.36.0(2022.04.18) 버전을 기준으로 진행하였습니다.
+ :bangbang: 버전이 달라지는 경우 설치 및 설정 방법이 변할 수 있습니다. 해당 설치 및 설정은**2.36.0(2022.04.18) 버전**을 기준으로 진행하였습니다.
 
 ### 2.1 Git 다운로드
 
-  2.1.1 먼저 [여기](https://git-scm.com/download/)에서 Git을 다운로드 해주세요.
+ 2.1.1 먼저 [여기](https://git-scm.com/download/)에서 Git을 다운로드 해주세요.
   
   ![image](https://user-images.githubusercontent.com/104341003/165985804-88be10e5-e7f8-4cd6-97dc-047c238b7e5e.png)
 
 
-  
+### 2.2 Git 설치
+
+🔍Next버튼을 눌러주세요. only show new options을 누르면, 다른 옵션들이 나오지 않으니 누르지 말고 진행해주세요.
+
+![image](https://user-images.githubusercontent.com/104341003/165987988-88dba63b-3908-4861-996b-d0c9a9449697.png)
+
+🔍**설치할 구성 요소들을 지정**하고 Next를 눌러줍니다.
+화면과 같이 진행하였으며, 아래에 간단한 설명을 추가합니다.
+![image](https://user-images.githubusercontent.com/104341003/165988256-59d2adea-83ca-4966-b879-1c235728c548.png)
+
+**Additional icons**
+ - On the Desktop : 바탕화면에 바로가기 생성
+**Windows Explorer integration**
+ - Git Bash Here : 폴더 오른쪽 클릭 메뉴에 Git Bash Here(연결 기능) 추가 ❗필수
+ - Git GUI Here : 폴더 오른쪽 클릭 메뉴에 Git GUI Here(연결 기능) 추가 ❗필수
+**Git LFS (Large File Support)** : 대용량 파일 지원 ❗필수
+**Associate .git* configuration files with the defalut text editor** : 기본 텍스트 에디터에 git 구성(.git 확장자) 연결 ❗필수
+**Associate .sh files to be run with Bash** : Bash에 .sh 확장자 파일 연결 ❗필수
+**Check daily for git for Windows updates** 윈도우에서 매일 새로운 업데이트 확인
+**(NEW!) Add a Git Bash Profile to Windows Terminal** 윈도우 기본 터미널(cmd)에 Git Bash 프로파일 추가 (선택)
+
+
+🔍**사용할 편집기를 선택합니다.** visual studio code를 저는 가장 많이 사용했기 때문에, vs code를 선택하였고, 다른 편집기를 사용하셔도 괜찮습니다.
+
+![image](https://user-images.githubusercontent.com/104341003/165989593-c2fa3346-693a-4ed0-a62d-4dfef3ae2e27.png)
+
+
+🔍**Repository(분기) 설정입니다.** 대부분, master를 기본으로 사용하기 때문에 **Let Git decide** 를 선택하였습니다.
+
+![image](https://user-images.githubusercontent.com/104341003/165989861-c5a7ac71-63a6-4d35-b109-52bd6ef6415e.png)
+
+
+🔍**Git 커맨드를 사용하기위한 설정입니다.** 화면과 같이 **Git from the command line and also from 3rd-party software**를 선택하였습니다. 
+
+**Use Git from Git Bash only** : Git Bash에서만 Git 명령어를 수행할 수 있습니다.
+**Git from the command line and also from 3rd-party software** : Git을 환경변수(PATH)에 추가하여 윈도우 기본 명령 프롬프트(CMD) 등에서도 Git 명령어를 수행할 수 있습니다.
+**Use Git and optional Unix tools from the Command Prompt** : Git과 Unix 도구 모두 환경변수(PATH)에 추가합니다. 
+ ❗ 이 경우 몇 가지 Windows 기본 도구가 새롭게 재정의 됩니다. 이러한 위험을 충분히 숙지하고 있는 경우에만 이 옵션을 사용하기를 권장합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/165990195-d4cc4518-f67c-477e-a2ef-7b1931e5a805.png)
+
+
+🔍**SSH연결 설정입니다.** 
+저는 외부SSH가 없고, Git에서 기본으로 제공되는 OpenSSH를 사용하기위해 화면과 같이 선택하였습니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/165990259-7ef88f11-db8a-4acb-a57c-e6aae4581be4.png)
+
+🔍**HTTP 설정입니다. 역시 기본 설정을 사용하였습니다. **
+
+![image](https://user-images.githubusercontent.com/104341003/165990463-32e8f91e-1f52-4b43-98a8-b372a07f3c8e.png)
+
+윈도우 / 유닉스의 줄바꿈 표기가 달라, 개발환경이 다른곳에서 진행할 경우 문제가될 수 있습니다. 
+윈도우에서만 진행할 경우 **Checkout Windows-style, commit Unix-style line endings**를 기본적으로 사용하셔도 괜찮습니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/165990798-451a8217-872a-4f08-94a3-259eb3456679.png)
+
+🔍**Git Bash의 터미널 프로그램 설정입니다.**
+
+**Use MinTTY (the default terminal of MSYS2)** : Git에서 제공하는 기본 터미널 에뮬레이터(MinTTY)를 사용합니다.
+**Use Windows' default console window** : 윈도우 기본 터미널(cmd)을 사용합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/165990904-99ce251b-5ca3-4eb8-9bbe-72a2f5d3cb1a.png)
+
+🔍**추후 사용할 pull(기존에 작업했던 내용은 유지하면서 최신 코드로 업데이트) 기능에 대한 설정입니다. **
+
+![image](https://user-images.githubusercontent.com/104341003/165991251-e57fa711-eec9-4f04-9bb3-11d874ad0137.png)
+
+🔍**자격 증명 도움입니다.** 
+
+![image](https://user-images.githubusercontent.com/104341003/165991382-54b94761-12f2-42ad-8e29-7610d5a75a8f.png)
+
+🔍**기타 옵션입니다.**
+
+**Enable file system caching** 파일 시스탬 캐싱을 활성화해 메모리 성능향상을 제공합니다
+
+![image](https://user-images.githubusercontent.com/104341003/165991443-92f4a47a-d303-4f57-91a9-4f7e90221983.png)
+
+🔍**실험적 기능입니다.**
+버그가 있다는 얘기가 있어 선택하지 않았습니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/165991604-a74897ae-f193-4521-82a2-cbfa1b1c5656.png)
+
+🔍**설치를 시작해주세요.**
+
+![image](https://user-images.githubusercontent.com/104341003/165992180-762ed6ab-5cb4-43c6-aa7b-0ce4df3a08d7.png)
+
+🔍**설치가 완료되었습니다 Finish를 눌러 종료해주세요.**
+
+![image](https://user-images.githubusercontent.com/104341003/165992528-946a8b9b-b96e-4c7b-9ad8-0badc3e2cc27.png)
+
+
+
 
 ## 3. GitHub 사용 방법
 
