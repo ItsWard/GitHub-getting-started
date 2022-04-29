@@ -46,16 +46,24 @@
   위의 내용들은 Git의 장점들을 나열하였고 **GitHub는 Git을 보다 쉽게 사용할 수 있도록 웹에서 사용할 수 있는 도구** 입니다. 
   Git은 cmd(콘솔창)에서 직접 텍스트형식으로 입력해야하지만, 우리가 지금 보고있는 GitHub는 웹페이지에서 관리 할 수 있습니다.
   
-  **["Git이 영상을 찍는 앱이라면, GitHub는 유튜브 라는 플랫폼이다 라고 생각하면 편하다."](https://www.youtube.com/watch?v=Bd35Ze7-dIw)**
+  🎥 **["Git이 영상을 찍는 앱이라면, GitHub는 유튜브 라는 플랫폼이다 라고 생각하면 편하다."](https://www.youtube.com/watch?v=Bd35Ze7-dIw)**
   
 만약 Git에 대해 더 깊게 알아보고 싶다면 [여기](https://git-scm.com/book/ko/v2)를 참조해주세요. 
 
 
 ## 2. Git 설치 및 설정
 
->해당 자료는 Windows 기반을 기본으로 안내드리고있습니다. Mac OS를 사용하시는 분들께서는 [이곳](https://sin0824.tistory.com/8)을 참조하시면 좋을것같습니다.
+❗ 해당 자료는 Windows 기반을 기본으로 안내드리고있습니다. Mac OS를 사용하시는 분들께서는 [이곳](https://sin0824.tistory.com/8)을 참조하시면 좋을것같습니다.<br>
+ :bangbang: 버전이 달라지는 경우 설치 및 설정 방법이 변할 수 있습니다. 해당 설치 및 설정은2.36.0(2022.04.18) 버전을 기준으로 진행하였습니다.
+
+### 2.1 Git 다운로드
+
+  2.1.1 먼저 [여기](https://git-scm.com/download/)에서 Git을 다운로드 해주세요.
+  
+  ![image](https://user-images.githubusercontent.com/104341003/165985804-88be10e5-e7f8-4cd6-97dc-047c238b7e5e.png)
 
 
+  
 
 ## 3. GitHub 사용 방법
 
@@ -71,7 +79,7 @@
 ## Reference
 
 ### 전체
-[Git으로 시작하는 협업 및 오픈소스 프로젝트](https://edu.goorm.io/lecture/11528/git%25EC%259C%25BC%25EB%25A1%259C-%25EC%258B%259C%25EC%259E%2591%25ED%2595%2598%25EB%258A%2594-%25ED%2598%2591%25EC%2597%2585-%25EB%25B0%258F-%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4-%25ED%2594%2584%25EB%25A1%259C%25EC%25A0%259D%25ED%258A%25B8) - 동빈나님 <br>
+🎥[Git으로 시작하는 협업 및 오픈소스 프로젝트](https://edu.goorm.io/lecture/11528/git%25EC%259C%25BC%25EB%25A1%259C-%25EC%258B%259C%25EC%259E%2591%25ED%2595%2598%25EB%258A%2594-%25ED%2598%2591%25EC%2597%2585-%25EB%25B0%258F-%25EC%2598%25A4%25ED%2594%2588%25EC%2586%258C%25EC%258A%25A4-%25ED%2594%2584%25EB%25A1%259C%25EC%25A0%259D%25ED%258A%25B8) - 동빈나님 <br>
 [어떻게 깃을 사용하는지 빠르게 알아봅시다.](https://www.pigno.se/barn/tutorial-git/docs/#/?id=fearful-%ec%86%8c%ec%8a%a4-%eb%b3%91%ed%95%a9)<br>
 [깃허브(GitHub)란?](https://tlsdnjs12.tistory.com/7) - 서스포PAR_개발블로그<br>
 
