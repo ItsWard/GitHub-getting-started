@@ -192,7 +192,7 @@ visual studio code를 저는 가장 많이 사용했기 때문에, vs code를 �
 git --version
 
 ```
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166300088-f47b5d61-1e1f-46cb-a42c-6227e17ac9df.png)
 
 <br>
@@ -251,14 +251,14 @@ git을 사용하기 위해 최초 설정을 진행합니다 .
 한번만 설정하면 나중에는 설정할 필요가 없습니다.
 
 다음 명령어를 Git Bash에서 실행합니다.
-<br>
+
 ```C
 
 git config --global user.name "사용자 이름"
 git config --global user.email "사용자 이메일"
 
 ```
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166198325-06dcb6d4-0204-4449-bbd8-6f0d4744c253.png)
 
 입력이 제대로 되었는 지 다음 명령어를 입력합니다.
@@ -268,7 +268,7 @@ git config --global user.email "사용자 이메일"
 git config --list
 
 ```
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166198435-d6142efe-2875-431b-ae07-86784e8bd072.png)
 
 <br>
@@ -277,24 +277,24 @@ git config --list
 ### 2.6 Git 맛보기
 
 우선 연습용 **작업공간(WorkSpace)을** 하나 만들어보겠습니다. (연습용이 아닌 실제 프로젝트로 진행하셔도 좋습니다.)
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166199291-0409f45d-e6a6-4739-9095-852858926e27.png)
 <br>
 <br>
 저는 이름을 **TestWorkSpace** 로 지정하였습니다
 
 해당 폴더안에 **테스트폴더** 와 **테스트소스코드.txt** 파일을 만들었습니다.
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166199534-c2b45d99-e33a-4d32-95b6-408f9934a6ac.png)
 <br>
 <br>
 해당 **작업공간(WorkSpace)** 에서 commit을 빠르게 진행하기위해 폴더 내에서 마우스 우클릭 - **Git Bash Here**을 선택합니다.
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166199628-ced50e14-186d-48e0-8c40-fc103e16f76c.png)
 <br>
 <br>
 **Git Bash Here**을 선택하면, 해당 위치를 따로 설정하지 않아도 작업공간으로 위치를 설정합니다.
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166199977-cc85e182-a77c-465d-a3d7-4271979d585f.png)
 <br>
 <br>
@@ -307,12 +307,12 @@ git init
 ```
 
 명령어를 입력하면, Git Bash에는 `Initialized empty Git repository` (비어있는 **저장소(Repository)** 를 생성했다.)라는 문구와 함께 **작업공간(WorkSpace)** 에 .git폴더가 생성됨을 확인 할 수 있습니다.
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166200219-bd052b92-14cc-4e7b-857d-b2d6d0c36ea7.png)
 <br>
-<br>
+
 .git 폴더가 보이지 않는경우 **폴더 위 보기 - 표시/숨기기**의 숨긴항목 체크
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166200379-a9ae6d34-6842-4c38-abda-526aaf65b53b.png)
 <br>
 <br>
@@ -325,7 +325,7 @@ git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
 ```
 
 다음과 같이 커밋하겠습니다. `git commit -m "Hello, git"`
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166201925-03a37ec7-f7e6-482e-aad6-8bab85732404.png)
 <br>
 <br>
@@ -344,12 +344,12 @@ git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
 git add 테스트폴더
 git add 테스트소스코드.txt
 ```
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166207424-d009e6da-d271-4a93-b7f7-bdbb3ededabe.png)
 <br>
 <br>
 이렇게 **작업공간(Work Space)** 에서 **로컬 저장소(Local Repository)** 만들기, **커밋(commit)** 까지 진행해보았습니다. <br>
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166229869-a338ba6d-3e03-4bec-aac1-0c9db2fd009b.png)
 <br>
 <br>
@@ -478,7 +478,7 @@ Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서
 
 > 개발 언어 혹은 환경마다 통상적으로 사용하는 규칙 혹은 스타일이 있습니다.<br> >[여기](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)에 자세하게 나와있으며<br>
 > stack overflow [답변](https://stackoverflow.com/questions/11947587/is-there-a-naming-convention-for-git-repositories)을 참조하세요.
-<br>
+
 ![image](https://user-images.githubusercontent.com/104341003/166259083-0324f2ba-ce41-487d-9fd2-94daed2b6783.png)
 <br>
 <br>
@@ -564,8 +564,8 @@ git clone https://github.com/ItsWard/GitHub-getting-started.git
 push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
 
 >```origin``` : **원격 저장소(Remote Repository)** 의 단축이름 <br>
-> Git에서 해당 **저장소(Repository)** 인 GitHub-getting-started 대신 origin으로 사용가능<br>
-> ex) ```git push origin main``` = git push GitHub-getting-started main``` <br>
+> Git에서 해당 **저장소(Repository)** 인 GitHub-getting-started 대신 origin으로 사용가능 <br>
+> ex) ```git push origin main``` = ```git push GitHub-getting-started main``` <br>
 한번이라도 ```init```하거나 ```clone```하는경우 자동으로 origin에 **원격 저장소(Remote Repository)** 의 이름이 저장된다고 생각하면 됩니다. <br>
 
 우리는 **2.6 Git 맛보기** 에서 **로컬 저장소(Local Repository)** 에 ```commit``` 하는 것 까지 진행했습니다.
@@ -578,27 +578,33 @@ push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
 >추가 예정입니다.
 <br>
 <br>
+
 ### 3.6 GitHub 원격 저장소(Remote Repository)에서 pull 하기
 >추가 예정입니다.
 <br>
 <br>
+
 ### 3.7 GitHub 게시물 가져오기(Fork)
 >추가 예정입니다.
 ```Fork``` 는 **원격 저장소(Remote Repository)** 에 있는 소스코드나 프로젝트들을 복사하여 내 GitHub의 **원격 저장소(Remote Repository)** 로 복제하고 싶을 때, 사용하는 기능입니다.
 <br>
 <br>
+
 ### 3.8 GitHub Pull Request 하기
 >추가 예정입니다.
 <br>
 <br>
+
 ## 번외1. GitHub 블로그 게시글 제작 방법
 >추가 예정입니다.
 <br>
 <br>
+
 ## 번외2. Git, GitHub 용어 정리
 >추가 예정입니다.
 <br>
 <br>
+
 ## 번외3. 기타 사이트 모음
 
 [Git Tip모음](https://github.com/Integerous/git-tips) - Integerous님 GitHub <br>
