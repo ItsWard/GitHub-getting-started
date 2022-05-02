@@ -666,9 +666,16 @@ Enter를 누르지 말고 ```! First copy your one-time code```를 미리 메모
 ![image](https://user-images.githubusercontent.com/104341003/166251196-4bf83f81-9e7d-4341-a341-a88f5ec0adc8.png) <br>
 
 
+SSH로 설정한 부분과 다르게 복제(clone) 할 경우 아래 사진과 같이 HTTPS 주소로 진행하여야합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166262829-9b4e7665-ba9d-4181-900e-aed531abf218.png)
 
 
-
+ ```C
+ 
+ git clone git@github.com:ItsWard/GitHub-getting-started.
+ 
+ ```
 
 
 
