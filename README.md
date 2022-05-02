@@ -673,9 +673,19 @@ SSH로 설정한 부분과 다르게 복제(clone) 할 경우 아래 사진과 �
 
  ```C
  
- git clone git@github.com:ItsWard/GitHub-getting-started.
+ git clone https://github.com/ItsWard/GitHub-getting-started.git
  
  ```
+
+![image](https://user-images.githubusercontent.com/104341003/166263280-352979c4-b6ce-4165-b767-29b93eadbe62.png)
+
+```ls``` 명령어로 정상적으로 **복제(clone)** 한 것을 확인할 수 있고 
+
+![image](https://user-images.githubusercontent.com/104341003/166263321-c54efb06-41b7-443f-9094-966e37918cd3.png)
+
+혹은 폴더에서 정상적으로 **복제(clone)** 한 것을 확인할 수 있습니다.
+![image](https://user-images.githubusercontent.com/104341003/166263424-aceceec5-bb38-4154-aab0-fa6f541f650d.png)
+
 
 
 
