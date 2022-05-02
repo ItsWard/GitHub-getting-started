@@ -60,7 +60,6 @@
 
 
 
-
 <br>
 <br>
 
@@ -343,9 +342,16 @@ git add 테스트소스코드.txt
 ![image](https://user-images.githubusercontent.com/104341003/166207424-d009e6da-d271-4a93-b7f7-bdbb3ededabe.png)
 
 
-이렇게  **작업공간(Work Space)** 에서 **로컬 저장소(Local Repository)** 만들기,  **커밋(commit)** 까지 진행해보았습니다. 
+이렇게  **작업공간(Work Space)** 에서 **로컬 저장소(Local Repository)** 만들기,  **커밋(commit)** 까지 진행해보았습니다. <br>
 
 
+![image](https://user-images.githubusercontent.com/104341003/166229869-a338ba6d-3e03-4bec-aac1-0c9db2fd009b.png)
+
+아래 사진은 **브랜치(branch)** 에 대한 내용을 제가 오늘 만들어 낸 커밋파일과 맞춰 제작하였습니다.<br>
+최초의 ```git init```를 통해 master branch를 생성하고, add 파일 - commit을 통해 하나의 시점을 추가했습니다. <br>
+
+이후 이렇게 버전별로 추가하게 되면 업데이트가 되고, **커밋(Commit)** 할 때 마다 master branch가 계속해서 생성되겠죠! <br>
+브랜치(Branch)에 대한 설명은 추후에 추가하도록 하겠습니다. 브랜치에 대해 자세히 알고싶으시다면 [여기](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)를 참조해주세요. 혹은 [여기](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)를 확인해주시면 좋을 것 같습니다.<br>
 
 ![image](https://user-images.githubusercontent.com/104341003/166208633-aa88d461-bf69-43ba-963a-220382306340.png)
 
@@ -353,20 +359,82 @@ git add 테스트소스코드.txt
 <br>
 <br>
 
-### GitHub 연동
 
-
-
-
-### ssh
-### 
 
 
 
 ## 3. GitHub 사용 방법
 
-Git Hub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
 
+### 3.1 GitHub 연동 -SSH키 만들기
+
+>우리는 지금까지 Git을 설치하고, 간단하게 버전관리하는 방법을 알아봤습니다.
+>이번에는 다양한 협업 기능을 제공하는 GitHub를 연동하여 사용하는 방법에 대해 알아보겠습니다. 
+
+GitHub를 사용하려면 **SSH 키** 를 먼저 등록해야 합니다. 
+>SSH 키란? **안전한 셸(Secure SHell)** 로 CLI(Command Line Interface)에서 다른 PC 혹은 서버에 연결하기 위한 인증 방법입니다.
+>사용자, 패스워드 등 다양한 인증방법을 지원하지만, 편리성, 안정성 면에서 추천하는 방법은 **공개키 인증 방식** 입니다.
+>공개키 인증 방식을 사용하려면 공개키와 개인키를 한 쌍을 만들어 공개키를 서버에 미리 등록해두면, 사용자는 개인키를 통해 SSH에 접속하고 공개키에 일치하는 부분이 있으면 인증에 성공하여 서버에 접속되는 방식입니다.
+
+```C
+
+ssh-keygen
+
+```
+
+명령어를 이용해 ssh key를 생성합니다.
+
+먼저 저장할 위치를 물어봅니다. ```Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/유저이름/.ssh/id_rsa):``` 
+기본값을 사용하기위해 그냥 Enter키를 눌러 다음으로 넘어갑니다.
+
+다음으로는 SSH 추가 Password를 지정할 것인지 물어봅니다. 추가 패스워드는 나중에 지정할 수 있으므로 우선 Enter를 **두 번** 눌러 키를 생성합니다.합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166234591-da503b68-1c47-4f5c-9153-ef29487d2fb4.png)
+
+
+생성된 ssh키는 
+**개인키(Private Key)** ```id_rsa``` 와 
+**공개키(Secret Key)** ```id_rsa.pub``` 두개를 생성합니다.
+
+**개인키(Private Key)** 는 **절대 외부에 공개되면 안되는 키**입니다.
+생성된 키 중 **공개키(Secret Key)**를 복사하여 자신의 GitHub에 등록합니다. 
+
+```C 
+
+cat ~/.ssh/id_rsa.pub
+
+````
+
+
+![image](https://user-images.githubusercontent.com/104341003/166235494-e6ad5419-07fc-45d9-8ee2-09b4c834f6c1.png)
+
+화면에 출력된 키(ssh-rsa ~~ 컴퓨터 이름)를 마우스로 드래그하여 복사합니다.
+
+복사하는 방법은 다음과 같습니다.
+
+1. 마우스 우클릭 -  복사(Copy)<br>
+2. 키보드 복사 <br>
+    *(windows CMD 또는 터미널 등) ```Ctrl```+```C``` <br>
+    *(git bash) ```Ctrl```+```Insert``` <br>
+    *(MacOS) ```Command```+```C``` <br>
+
+메모장에 붙여넣기하여 복사가 잘 되었는 지 확인후, github에 공개키를 등록합니다.
+
+<br>
+
+### 3.1 GitHub 연동 -공개키를 GitHub 계정에 등록하기
+
+[Git Hub](https://github.com)
+
+
+Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서비스입니다. GitHub에서는 GUI환경의 웹에서 **원격 저장소(Remote Repository)** 를 간단하게 생성하고 관리할 수 있습니다. 
+
+Git
+
+GitHub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
+
+
+### 
 
 
 
@@ -409,6 +477,6 @@ Add email address에 해당 이메일을 다시 입력한 후 Unverified -  Rese
 [GITHUB입문 Git 설치하기](https://taewow.tistory.com/13) - 코딩의행복블로그<br>
 [Git허브 브랜치](https://www.youtube.com/watch?v=RYfO6-hPBdw) - 베르의 게임 개발 유튜브<br>
 [[Windows 10] Git 최신 버전 설치 및 사용 방법](https://www.lainyzine.com/ko/) - LainyZine: 프로그래머 가이드
-
+[GitHub Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html) -HeeJeong Kwon님의 블로그
 ### 번외1. GitHub 게시글 제작방법
 
