@@ -412,11 +412,11 @@ cat ~/.ssh/id_rsa.pub
 
 복사하는 방법은 다음과 같습니다.
 
-1. 마우스 우클릭 -  복사(Copy)<br>
-2. 키보드 복사 <br>
-    *(windows CMD 또는 터미널 등) ```Ctrl```+```C``` <br>
-    *(git bash) ```Ctrl```+```Insert``` <br>
-    *(MacOS) ```Command```+```C``` <br>
+>1. 마우스 우클릭 -  복사(Copy)<br>
+>2. 키보드 복사 <br>
+>    *(windows CMD 또는 터미널 등) ```Ctrl```+```C``` <br>
+>    *(git bash) ```Ctrl```+```Insert``` <br>
+>    *(MacOS) ```Command```+```C``` <br>
 
 메모장에 붙여넣기하여 복사가 잘 되었는 지 확인후, github에 공개키를 등록합니다.
 
@@ -424,7 +424,20 @@ cat ~/.ssh/id_rsa.pub
 
 ### 3.1 GitHub 연동 -공개키를 GitHub 계정에 등록하기
 
-[Git Hub](https://github.com)
+[Git Hub](https://github.com/settings/keys)로 이동해 SSH Key를 등록합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166236847-00e82b20-d692-4391-a358-1ddab4dca501.png)
+
+Title에는 사용자 임의로 제목을 입력합니다.
+Key에는 이전에 복사한 **공개키(Secret Key)** 를 붙혀넣기 한 후 Add SSH key를 눌러 등록합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166237155-da472ca2-b2db-46e4-8ba7-845bbd91433b.png)
+
+정상적으로 등록된 경우 아래 사진처럼 추가됩니다.  
+
+![image](https://user-images.githubusercontent.com/104341003/166237401-6e4f517f-2021-49c7-a4cc-b9f0e3e5c737.png)
+
+
 
 
 Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서비스입니다. GitHub에서는 GUI환경의 웹에서 **원격 저장소(Remote Repository)** 를 간단하게 생성하고 관리할 수 있습니다. 
