@@ -437,6 +437,14 @@ Key에는 이전에 복사한 **공개키(Secret Key)** 를 붙혀넣기 한 후
 
 ![image](https://user-images.githubusercontent.com/104341003/166237401-6e4f517f-2021-49c7-a4cc-b9f0e3e5c737.png)
 
+SSH 키가 정상적으로 등록되었는 지 확인하기 위해 ```clone``` 명령어로 **원격 저장소(Remote Repository)** 를 **로컬 저장소(Local Repository)** 로 복제하겠습니다.
+
+ ```git clone git@github.com:ItsWard/GitHub-getting-started.git```
+
+![image](https://user-images.githubusercontent.com/104341003/166238938-e4ed9e63-ef42-4f0c-ab97-03b69b158fa0.png)
+
+![image](https://user-images.githubusercontent.com/104341003/166239039-a11a9e0f-140d-449c-b272-b4e2fd30ce72.png)
+<center>git clone 명령어를 사용한 후 
 
 
 
