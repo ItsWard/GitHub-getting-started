@@ -361,8 +361,6 @@ git add 테스트소스코드.txt
 
 
 
-
-
 ## 3. GitHub 사용 방법
 
 
@@ -439,23 +437,37 @@ Key에는 이전에 복사한 **공개키(Secret Key)** 를 붙혀넣기 한 후
 
 SSH 키가 정상적으로 등록되었는 지 확인하기 위해 ```clone``` 명령어로 **원격 저장소(Remote Repository)** 를 **로컬 저장소(Local Repository)** 로 복제하겠습니다.
 
- ```git clone git@github.com:ItsWard/GitHub-getting-started.git```
 
 ![image](https://user-images.githubusercontent.com/104341003/166238938-e4ed9e63-ef42-4f0c-ab97-03b69b158fa0.png)
 
-![image](https://user-images.githubusercontent.com/104341003/166239039-a11a9e0f-140d-449c-b272-b4e2fd30ce72.png)
-<center>git clone 명령어를 사용한 후 
+ ```git clone git@github.com:ItsWard/GitHub-getting-started.git```
+
+![image](https://user-images.githubusercontent.com/104341003/166239332-78173e1c-42d9-4458-a002-b7dd9f8dcddb.png)
+
+사용자가 등록한 SSH키와 복사하려는 **저장소(Remote Repository)** 의 이름이 다른경우
+```This key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])?``` 와 같이 나오게되는데, yes를 입력합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239664-36bd9d3e-2d77-439f-869c-3f4c55bc470f.png)
 
 
+정상적으로 복제가 완료되었다면 ls 명령어를 이용해 확인이 가능합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239545-075b7176-0d7a-4dc8-89bb-411075e1b382.png)
+
+혹은 해당 폴더에 들어가면 ***저장소(Repository)*** 가 복제 되어있는 것을 볼 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239451-debc6e4b-f211-4e48-b0c2-e9c196672d5b.png)
+
+
+<br>
+<br>
+
+
+### 3.1 GitHub 에서 원격 저장소(Remote Repository) 만들기
 
 Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서비스입니다. GitHub에서는 GUI환경의 웹에서 **원격 저장소(Remote Repository)** 를 간단하게 생성하고 관리할 수 있습니다. 
 
-Git
-
 GitHub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
-
-
-### 
 
 
 
