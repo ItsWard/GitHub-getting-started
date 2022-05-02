@@ -24,7 +24,6 @@
 
 <br>
 <br>
-<br>
 
 ## 1. Git, GitHub란?
 
@@ -35,11 +34,14 @@
  ```
 
 어떤 프로젝트던 **버전관리**는 중요하겠지만 소프트웨어에서는 **버전관리가 중요합니다.**
+버전관리란, 시간에 따라 파일의 변화를 기록하여 특정 시점의 버전을 다시 꺼내올 수 있도록 하는 시스템입니다.
 이전 버전의 기능을 가져올 수도 있고, 실수로 삭제되거나 여러 개발자가 하나의 프로그램을 제작 할 때
 소스코드가 섞이는경우 **복원해야 할 수도 있죠.**
 
+이러한 것들이 모두 가능하게 하는것이 **Git**이라는 프로그램입니다. 
+
 깃허브는 이러한 개발자들이 그동한 개발해 왔던 내용들을 버전관리 뿐만이 아니라 **개발 프로젝트를 위한 관리 서비스와 저장소**를 지원합니다. 
-인터넷이 연결되어있다면 **어디서나 해당 프로그램을 가져와 개발 할 수 있고, 인터넷이 없더라도 미리 저장한 프로그램을 이용해 개발할 수 있습니다.** 물론, 나중에 업로드도 가능하고요!<br>
+인터넷이 연결되어있다면 **어디서나 해당 프로그램을 가져와 개발 할 수 있고, 인터넷이 없더라도 미리 저장한 프로그램을 이용해 개발할 수 있습니다.** 물론, 나중에 GitHub로 업로드(추후엔 Push라고 합니다!)도 가능하고요!<br>
 
 또, 깃허브를 사용해 소스를 수정하고, 개발하는 내용과 기간은 모두 기록되므로 **깃허브 자체가 자신의 포트폴리오**가 될 수 있습니다.
 협업 프로그램에서는 여러 개발 소스를 병합하여 **언제 누가 무엇을 수정**하였는지 확인할 수 있고 각자 맡은 분야를 개발하여 합치는 **소스 병합**도 지원합니다.
@@ -49,9 +51,9 @@
 이러한 굉장한 장점을 가지고 있기 때문에 전세계 개발자들이 많이 사용하고 있습니다. 
 
 ### Git과 GitHub의 차이점은요?<br>
-  위의 내용들은 Git의 장점들을 나열하였고 **GitHub는 Git을 보다 쉽게 사용할 수 있도록 웹에서 사용할 수 있는 도구** 입니다. 
-  Git은 cmd(콘솔창)에서 직접 텍스트형식으로 입력해야하지만, 우리가 지금 보고있는 GitHub는 웹페이지에서 관리 할 수 있습니다.
-  
+  **GitHub는 Git을 보다 쉽게 사용할 수 있도록 웹에서 사용할 수 있는 도구** 입니다. <br><br>
+  **Git** : CLI(Command Line Interface)환경의 버전관리 시스템 <br>
+  **GitHub** : GUI(Grapic User Interface)의 웹페이지 환경에서 Git으로 관리하는 프로젝트를 올려두는 사이트 + 원격으로 저장,관리 및 협업을 위해 여러 시스템들을 제공해주는 사이트  <br>
   🎥 **["Git이 영상을 찍는 앱이라면, GitHub는 유튜브 라는 플랫폼이다 라고 생각하면 편하다."](https://www.youtube.com/watch?v=Bd35Ze7-dIw)**
   
 만약 Git에 대해 더 깊게 알아보고 싶다면 [여기](https://git-scm.com/book/ko/v2)를 참조해주세요. 
@@ -59,7 +61,6 @@
 
 
 
-<br>
 <br>
 <br>
 
@@ -188,7 +189,8 @@ git -version
 
 ![image](https://user-images.githubusercontent.com/104341003/166194222-29d042d7-e2ff-4bb8-96fa-f9b49bbbef4f.png)
 
-
+<br>
+<br>
 
 ### 2.3 GitHub 가입
 
@@ -222,20 +224,151 @@ resend the code를 클릭해 다시 메일을 보내거나 혹은<br>
 
 <br>
 <br>
-<br>
 
 
 ### 2.4 Git 설정 및 GitHub 연동
 
-먼저 git을 사용하기 위해 최초 설정을 진행합니다 .
+> **Git 설정 및 Github 연동** 전, 간단하게 git에서 사용하는 용어에 대해 알아보겠습니다.
+
+```C
+
+로컬(Local) : 내 PC (혹은 작업하고 있는 PC) 
+원격(Remote) : 원격 서버 (Git/GitHub에서 원격은 보통 GitHub를 의미함)
+작업공간(WorkSpace) : 소스코드, 폴더들이 들어있는 프로젝트 폴더
+저장소(Repository) : 내가 관리할 작업공간을 Git이 제공하는 자료구조 안에 압축시켜 넣은것 (git init 명령어를 실행하면, 해당 파일안에 .git 폴더가 생성되며 이 작업공간의 .git 폴더를 저장소라고 함.)
+커밋(Commit) : 프로젝트(파일 및 폴더)의 추가/변경사항을 저장소에 기록하는 것(어떤 프로젝트의 Save파일을 만들어 저장소에 저장하는것 라고 생각하면 편합니다.) 
+
+```
+
+### 2.5 Git 설정
+
+git을 사용하기 위해 최초 설정을 진행합니다 .
+
+먼저 사용자 이름과 이메일을 설정합니다.
+설정하는 이유는 **git**을 이용해 **커밋(commit)** 할 때 사용자 이름과 이메일이 기록되기 때문에 먼저 설정해둡니다.
+한번만 설정하면 나중에는 설정할 필요가 없습니다.
+
+다음 명령어를 Git Bash에서 실행합니다. 
+
+```C
+
+git config --global user.name "사용자 이름"
+git config --global user.email "사용자 이메일"
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166198325-06dcb6d4-0204-4449-bbd8-6f0d4744c253.png)
+
+입력이 제대로 되었는 지 다음 명령어를 입력합니다.
+
+```C
+
+git config --list
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166198435-d6142efe-2875-431b-ae07-86784e8bd072.png)
+
+<br>
+<br>
+
+
+### 2.6 Git 맛보기
+
+우선 연습용 **작업공간(WorkSpace)을** 하나 만들어보겠습니다. (연습용이 아닌 실제 프로젝트로 진행하셔도 좋습니다.)
+
+![image](https://user-images.githubusercontent.com/104341003/166199291-0409f45d-e6a6-4739-9095-852858926e27.png)
+
+저는 이름을 **TestWorkSpace** 로 지정하였습니다 
+
+해당 폴더안에 **테스트폴더** 와 **테스트소스코드.txt** 파일을 만들었습니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/166199534-c2b45d99-e33a-4d32-95b6-408f9934a6ac.png)
+
+해당 **작업공간(WorkSpace)** 에서 commit을 빠르게 진행하기위해 폴더 내에서 마우스 우클릭 - **Git Bash Here**을 선택합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166199628-ced50e14-186d-48e0-8c40-fc103e16f76c.png)
+
+**Git Bash Here**을 선택하면, 해당 위치를 따로 설정하지 않아도 작업공간으로 위치를 설정합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166199977-cc85e182-a77c-465d-a3d7-4271979d585f.png)
+
+해당 **작업공간(WorkSpace)** 을 **저장소(Repository)** 로 관리하기 위해 ```git init```로 저장소를 초기화 합니다.
+
+```C
+
+git init
+
+```
+
+명령어를 입력하면, Git Bash에는 ``` Initialized empty Git repository ``` (비어있는 **저장소(Repository)** 를 생성했다.)라는 문구와 함께 **작업공간(WorkSpace)** 에 .git폴더가 생성됨을 확인 할 수 있습니다.
+
+
+![image](https://user-images.githubusercontent.com/104341003/166200219-bd052b92-14cc-4e7b-857d-b2d6d0c36ea7.png)
+
+.git 폴더가 보이지 않는경우 **폴더 위 보기 - 표시/숨기기**의 숨긴항목 체크
+
+![image](https://user-images.githubusercontent.com/104341003/166200379-a9ae6d34-6842-4c38-abda-526aaf65b53b.png)
+
+
+그렇다면 저장소도 생성했으니 **커밋(Commit)** 을 해보도록 하겠습니다. **커밋(Commit)** 명령어는 다음과 같습니다.
+
+```C
+
+git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
+
+```
+
+다음과 같이 커밋하겠습니다. ```git commit -m "Hello, git"```
+
+![image](https://user-images.githubusercontent.com/104341003/166201925-03a37ec7-f7e6-482e-aad6-8bab85732404.png)
+
+다음과 같은 오류메세지 ```nothing added to commit but untracked files present (use "git add" to track)```과 함께 커밋에 실패했습니다. <br>
+**notthing added to commit** 커밋을 위해 add된 파일이 없습니다. <br>
+**untracked files present** Git에 의해 아직 추적되고있지 않아 버전관리 대상이 아니다. 라는 뜻입니다.
+
+**use** ```git add``` **to track**  git add를 이용해 track 하라고 되어있네요. 한마디로,
+
+커밋을 하기 전에는 반드시 **커밋할 파일들을 미리 지정** 해야합니다. <br>
+파일을 새로 생성하거나 원래 있던 파일들을 수정한 내용을 .git에 기록하는 것이 커밋입니다.
+해당 작업을 하는 부분이 바로 ```add``` 입니다. 
+
+파일들을 add해보겠습니다. 명령어는 ```git add 파일이름.파일확장자``` 입니다.
+
+```C
+git add 테스트폴더
+git add 테스트소스코드.txt
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166207424-d009e6da-d271-4a93-b7f7-bdbb3ededabe.png)
+
+
+이렇게  **작업공간(Work Space)** 에서 **로컬 저장소(Local Repository)** 만들기,  **커밋(commit)** 까지 진행해보았습니다. 
+
+
+
+![image](https://user-images.githubusercontent.com/104341003/166208633-aa88d461-bf69-43ba-963a-220382306340.png)
+
+
+<br>
+<br>
+
+### GitHub 연동
 
 
 
 
-GitHub와 동일한 
+### ssh
+### 
+
 
 
 ## 3. GitHub 사용 방법
+
+Git Hub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
+
+
+
 
 ## 번외1. GitHub 게시글 제작 방법
 
