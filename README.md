@@ -420,7 +420,7 @@ cat ~/.ssh/id_rsa.pub
 
 <br>
 
-### 3.1 GitHub 연동 -공개키를 GitHub 계정에 등록하기
+### 3.2 GitHub 연동 - 공개키를 GitHub 계정에 등록하기
 
 [Git Hub](https://github.com/settings/keys)로 이동해 SSH Key를 등록합니다.
 
@@ -461,20 +461,63 @@ SSH 키가 정상적으로 등록되었는 지 확인하기 위해 ```clone``` �
 
 ![image](https://user-images.githubusercontent.com/104341003/166239545-075b7176-0d7a-4dc8-89bb-411075e1b382.png)
 
-혹은 해당 폴더에 들어가면 ***저장소(Repository)*** 가 복제 되어있는 것을 볼 수 있습니다.
+혹은 해당 폴더에 들어가면 **저장소(Repository)** 가 복제 되어있는 것을 볼 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166239451-debc6e4b-f211-4e48-b0c2-e9c196672d5b.png)
 
 
+3.1 GitHub 연동 - 공개키를 GitHub 계정에 등록하기를 실패했을경우, [SSH키를 계정에 등록하였는데도 안되는경우](#ssh키를-계정에-등록하였는데도-안되는경우)를 클릭하여 확인해보세요.
+
+
+
 <br>
 <br>
 
 
-### 3.1 GitHub 에서 원격 저장소(Remote Repository) 만들기
+### 3.3 GitHub 에서 원격 저장소(Remote Repository) 만들기
 
 Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서비스입니다. GitHub에서는 GUI환경의 웹에서 **원격 저장소(Remote Repository)** 를 간단하게 생성하고 관리할 수 있습니다. 
 
-GitHub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
+[GitHub](https://github.com)를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/166258618-0e270227-5351-4afb-8576-8666370f20f7.png)
+
+**원격 저장소(Remote Repository)** 를 만들기위해 
+1. GitHub에 로그인되어있다면 [여기](https://github.com/new)를 클릭하세요.
+2. 혹은 GitHub 메인 홈페이지의 New를 누릅니다. 
+
+사용할 **원격 저장소의 이름(Repository name)** 을 입력합니다. 
+>개발 언어 혹은 환경마다 통상적으로 사용하는 규칙 혹은 스타일이 있습니다.<br>
+>[여기](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)에 자세하게 나와있으며<br>
+>stack overflow [답변](https://stackoverflow.com/questions/11947587/is-there-a-naming-convention-for-git-repositories)을 참조하세요.
+
+
+![image](https://user-images.githubusercontent.com/104341003/166259083-0324f2ba-ce41-487d-9fd2-94daed2b6783.png)
+
+해당 **저장소(Repository)** 의 간단한 설명을 입력합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166260644-669b505e-4e67-44b5-9af8-e3d16af7f807.png)
+
+공개 여부를 선택합니다.<br>
+**Public** : 전체 공개
+**Private** : 선택적 공개
+
+![image](https://user-images.githubusercontent.com/104341003/166260830-62f68c93-9849-4c52-ac3b-e11c055f34d7.png)
+
+**저장소(Repository)** 초기화 입니다. 모두 선택 후 Create repository를 눌러 저장소를 새로 제작합니다. 
+
+**Add a README file** : 해당 **저장소(Repository)** 에 대한 자세한 설명이나 사용 방법에 대해 서술하는 파일을 만듭니다.<br>
+**Add .gitignore** : 지정한 확장자 파일을 무시합니다. (Git 버전 관리에서 제외할 파일 목록을 지정하는 파일 지정)<br>
+**Choose a license** : 라이센스를 선택합니다. (자세한 내용은 [여기](https://flyingsquirrel.medium.com/github-license%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%EB%82%98%EC%97%90%EA%B2%8C-%EB%A7%9E%EB%8A%94-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0-ae29925e8ff4)를 확인하세요)<br>
+
+![image](https://user-images.githubusercontent.com/104341003/166262010-d077f4b1-fab2-4100-bd49-a8cc98b887d2.png)
+
+<br>
+<br>
+
+### 3.4 GitHub 원격 저장소(Remote Repository)에 push 하기
+
+```push```란 
 
 
 
@@ -486,8 +529,9 @@ GitHub를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나�
 [Git Tip모음](https://github.com/Integerous/git-tips) - Integerous님 GitHub <br>
 [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)<br>
 [GitHub 이모티콘 모음](https://gist.github.com/rxaviers/7360908)<br>
-
-
+[마크다운 markdown 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)<br>
+[Git 이름 스타일 가이드](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)
+[매력적인 깃허브 프로필을 만들어보아요](https://butter-shower.tistory.com/142)
 ## Truble Shooting
 
 ### 가입 시 이메일 주소를 잘못 입력하였을 경우
@@ -505,6 +549,127 @@ Add email address에 해당 이메일을 다시 입력한 후 Unverified -  Rese
 
 ![image](https://user-images.githubusercontent.com/104341003/166185229-7dcabd6a-d164-441e-a2dc-e108f313af78.png)
 
+<br>
+<br>
+
+### SSH키를 계정에 등록하였는데도 안되는경우
+
+
+
+
+**(공통)SSH키 재설정**
+
+1. Github - Settings - SSH keys 에 등록한 공개키 삭제합니다.<br>
+2. 프롬프트에 cat ~/.ssh/id_rsa.pub 명령어를 입력하여 나타나는 공개키를 다시 복사합니다.<br>
+3. Github - Settings - SSH keys 에서 New SSH key 버튼 클릭합니다.<br>
+4. Title을 입력하고, 복사한 공개키를 Key에 붙여 넣고 Enter 키를 입력해 한 줄을 추가(개행)<br>
+5. Add SSH key 버튼을 클릭하고, 승인하여 공개키를 등록<br>
+-------
+
+
+**GitHub CLI 설치(Windows)**
+[여기](https://cli.github.com/)에서 github cli를 다운로드합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166245942-a38a338e-5003-4dbc-8456-3f33e4ce8c07.png)
+
+다음과 같이 설치합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166246051-536df8e2-1918-4b1b-a432-fe9953bd098c.png)
+![image](https://user-images.githubusercontent.com/104341003/166246083-898b636a-ab22-4a40-a123-26767e5a3f23.png)
+![image](https://user-images.githubusercontent.com/104341003/166246108-b10e04f1-7607-40d4-919f-18ed8cfa1ee3.png)
+
+
+```gh --version```명령어를 입력했을 때 다음과 같이 버전이 확인되면 정상적으로 설치된 것입니다. 
+
+```C
+
+gh --version
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166248613-87de2b50-dc79-4d06-b7c5-a0e43a8b3d72.png)
+
+
+ ```winpty gh auth login``` 명령어를 입력해 로그인을 시도합니다.
+ 
+```C
+
+winpty gh auth login
+
+```
+<br>
+-------
+
+**macOS 환경**
+
+```brew install gh``` 명령어를 이용해 GitHub CLI를 설치합니다. 
+
+```C
+
+brew install gh
+
+```
+
+```gh --version```명령어를 입력했을 때 다음과 같이 버전이 확인되면 정상적으로 설치된 것입니다. 
+
+```C
+
+gh --version
+
+```
+
+```gh auth login``` 명령어를 입력해 로그인을 시도합니다.
+ 
+```C
+
+gh auth login
+
+```
+-------
+
+#### Git CLI을 이용한 인증과정 진행
+
+방향키와 Enter를 이용하여 git Bash 혹은 터미널 창에서 선택할 수 있습니다. <br>
+```? What account do you want to log into?``` -> ```GitHub.com```을 선택합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166248923-a9da253d-b15d-4bc2-a812-480b9e255f98.png)
+
+```SSH```로 인증을 실패하였으므로 ```HTTPS```를 선택해 인증을 진행합니다.<br>
+? What is your preferred protocol for Git operations? -> ```HTTPS```
+
+
+![image](https://user-images.githubusercontent.com/104341003/166249198-e764d24a-ad31-4a99-a773-709c92f81c49.png)
+
+Git허브 인증으로 Git을 인증할건지를 선택합니다. <br>
+```? Authenticate Git with your GitHub credentials?``` -> ```Y```
+
+![image](https://user-images.githubusercontent.com/104341003/166249958-da1e5c29-6654-4939-a53c-1f110cde1363.png)
+
+GitHub 로그인 방법을 선택합니다. <br>
+```? How would you like to authenticate GitHub CLI?```->```Login with a web browser```
+
+![image](https://user-images.githubusercontent.com/104341003/166249996-ddac1fff-df99-4912-86ad-f30f898bdc3b.png)
+
+
+Enter를 누르지 말고 ```! First copy your one-time code```를 미리 메모장에 복사해 둡니다. 이후 Enter를 누르면 GitHub 인증코드 입력 페이지가 나옵니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166250305-67a1c0a3-c812-41b0-ad7f-a39c4b49b2e3.png)
+
+![image](https://user-images.githubusercontent.com/104341003/166250658-1266d4a4-c648-4fd4-844d-c4b517d8e58d.png)
+
+**Authorize GitHub** 를 클릭하여 Git과 GitHub를 연동합니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/166250714-5a1c970c-7a12-4447-9e4f-226804a21efa.png)
+
+연동이 완료되었으면 Git과 GitHub에서 연결완료가 되었다고 나옵니다.<br>
+![image](https://user-images.githubusercontent.com/104341003/166250984-c6b71527-e5f1-4dfc-8f6d-eaf0bf8723af.png) <br>
+![image](https://user-images.githubusercontent.com/104341003/166251196-4bf83f81-9e7d-4341-a341-a88f5ec0adc8.png) <br>
+
+
+
+
+
+
 
 
 
@@ -516,7 +681,9 @@ Add email address에 해당 이메일을 다시 입력한 후 Unverified -  Rese
 [깃허브(GitHub)란?](https://tlsdnjs12.tistory.com/7) - 서스포PAR_개발블로그<br>
 [GITHUB입문 Git 설치하기](https://taewow.tistory.com/13) - 코딩의행복블로그<br>
 [Git허브 브랜치](https://www.youtube.com/watch?v=RYfO6-hPBdw) - 베르의 게임 개발 유튜브<br>
-[[Windows 10] Git 최신 버전 설치 및 사용 방법](https://www.lainyzine.com/ko/) - LainyZine: 프로그래머 가이드
-[GitHub Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html) -HeeJeong Kwon님의 블로그
+[[Windows 10] Git 최신 버전 설치 및 사용 방법](https://www.lainyzine.com/ko/) - LainyZine: 프로그래머 가이드<br>
+[GitHub Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html) -HeeJeong Kwon님의 블로그<br>
+[누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/stepup/stepup1_3.html)<br>
+
 ### 번외1. GitHub 게시글 제작방법
 
