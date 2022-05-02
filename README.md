@@ -80,12 +80,13 @@
 🔍Next버튼을 눌러주세요. only show new options을 누르면, 다른 옵션들이 나오지 않으니 누르지 말고 진행해주세요.
 
 ![image](https://user-images.githubusercontent.com/104341003/165987988-88dba63b-3908-4861-996b-d0c9a9449697.png)
-
+<br>
 🔍**설치할 구성 요소들을 지정**하고 Next를 눌러줍니다.
 화면과 같이 진행하였으며, 아래에 간단한 설명을 추가합니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165988256-59d2adea-83ca-4966-b879-1c235728c548.png)
-
+<br>
+<br>
 **Additional icons**
 
 - On the Desktop : 바탕화면에 바로가기 생성
@@ -97,17 +98,20 @@
   ❗필수 **Associate .sh files to be run with Bash** : Bash에 .sh 확장자 파일 연결 <br>
   **Check daily for git for Windows updates** 윈도우에서 매일 새로운 업데이트 확인<br>
   **(NEW!) Add a Git Bash Profile to Windows Terminal** 윈도우 기본 터미널(cmd)에 Git Bash 프로파일 추가 (선택)
-
+<br>
+<br>
 🔍**사용할 편집기를 선택합니다.**
 visual studio code를 저는 가장 많이 사용했기 때문에, vs code를 선택하였고, 다른 편집기를 사용하셔도 괜찮습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165989593-c2fa3346-693a-4ed0-a62d-4dfef3ae2e27.png)
-
+<br>
+<br>
 🔍**Repository(분기) 설정입니다.**
 대부분, master를 기본으로 사용하기 때문에 **Let Git decide** 를 선택하였습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165989861-c5a7ac71-63a6-4d35-b109-52bd6ef6415e.png)
-
+<br>
+<br>
 🔍**Git 커맨드를 사용하기위한 설정입니다.**
 화면과 같이 **Git from the command line and also from 3rd-party software**를 선택하였습니다.
 
@@ -117,12 +121,14 @@ visual studio code를 저는 가장 많이 사용했기 때문에, vs code를 �
 이 경우 몇 가지 Windows 기본 도구가 새롭게 재정의 됩니다. 이러한 위험을 충분히 숙지하고 있는 경우에만 이 옵션을 사용하기를 권장합니다.<br>
 
 ![image](https://user-images.githubusercontent.com/104341003/165990195-d4cc4518-f67c-477e-a2ef-7b1931e5a805.png)
-
+<br>
+<br>
 🔍**SSH연결 설정입니다.**
 저는 외부SSH가 없고, Git에서 기본으로 제공되는 OpenSSH를 사용하기위해 화면과 같이 선택하였습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165990259-7ef88f11-db8a-4acb-a57c-e6aae4581be4.png)
-
+<br>
+<br>
 🔍**HTTP 설정입니다.**
 역시 기본 설정을 사용하였습니다.
 
@@ -132,54 +138,62 @@ visual studio code를 저는 가장 많이 사용했기 때문에, vs code를 �
 윈도우에서만 진행할 경우 **Checkout Windows-style, commit Unix-style line endings**를 기본적으로 사용하셔도 괜찮습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165990798-451a8217-872a-4f08-94a3-259eb3456679.png)
-
+<br>
+<br>
 🔍**Git Bash의 터미널 프로그램 설정입니다.**
 
 **Use MinTTY (the default terminal of MSYS2)** : Git에서 제공하는 기본 터미널 에뮬레이터(MinTTY)를 사용합니다.
 **Use Windows' default console window** : 윈도우 기본 터미널(cmd)을 사용합니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165990904-99ce251b-5ca3-4eb8-9bbe-72a2f5d3cb1a.png)
-
+<br>
+<br>
 🔍**추후 사용할 pull(기존에 작업했던 내용은 유지하면서 최신 코드로 업데이트) 기능에 대한 설정입니다.**
 
 ![image](https://user-images.githubusercontent.com/104341003/165991251-e57fa711-eec9-4f04-9bb3-11d874ad0137.png)
-
+<br>
+<br>
 🔍**자격 증명 도움입니다.**
 
 ![image](https://user-images.githubusercontent.com/104341003/165991382-54b94761-12f2-42ad-8e29-7610d5a75a8f.png)
-
+<br>
+<br>
 🔍**기타 옵션입니다.**
 
 **Enable file system caching** 파일 시스탬 캐싱을 활성화해 메모리 성능향상을 제공합니다
 
 ![image](https://user-images.githubusercontent.com/104341003/165991443-92f4a47a-d303-4f57-91a9-4f7e90221983.png)
-
+<br>
+<br>
 🔍**실험적 기능입니다.**
 버그가 있다는 얘기가 있어 선택하지 않았습니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/165991604-a74897ae-f193-4521-82a2-cbfa1b1c5656.png)
-
+<br>
+<br>
 🔍**설치를 시작해주세요.**
 
 ![image](https://user-images.githubusercontent.com/104341003/165994016-ee8c8f68-108c-42bb-bf78-25a2a249aaae.png)
-
+<br>
+<br>
 🔍**설치가 완료되었습니다 Finish를 눌러 종료해주세요.**
 
 ![image](https://user-images.githubusercontent.com/104341003/165994118-4e916000-995b-4bef-9a30-d51c71b9e34e.png)
 
 검색창에서 GitBash를 입력하여 실행해주세요.
-
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166193856-422fb601-8bb9-4089-878e-ae08a17caeea.png)
 
 실행한 Git Bash에서 git version을 확인해 다음 사진과 같이 나오면 정상적으로 설치되었음을 확인할 수 있습니다.
-
+<br>
 ```C
 
-git -version
+git --version
 
 ```
-
-![image](https://user-images.githubusercontent.com/104341003/166194222-29d042d7-e2ff-4bb8-96fa-f9b49bbbef4f.png)
+<br>
+![image](https://user-images.githubusercontent.com/104341003/166300088-f47b5d61-1e1f-46cb-a42c-6227e17ac9df.png)
 
 <br>
 <br>
@@ -190,15 +204,17 @@ GitHub를 이용하기 위해서는 반드시 계정이 필요합니다. 만약 
 GitHub는 [여기](https://github.com)에서 가입이 가능합니다.
 
 우측 상단의 Sign up을 클릭하여 가입할 수 있습니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166183718-4080e315-66f4-42c4-ae4e-fe9354d75604.png)
-
+<br>
+<br>
 사용할 메일주소, 비밀번호, GitHub에서 사용할 닉네임 입력, 광고/업데이트 관련 메일 수신여부 및 로봇이 아닙니다.를 설정하면 이메일 인증으로 넘어가집니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166184179-6956b84b-bf9c-4027-80f6-f93b6019de09.png)
-
+<br>
+<br>
 아이디로 사용할 이메일 편지함에서 인증코드를 확인하여 인증을 진행해주세요.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166184564-18460205-9fae-417d-bd3e-82b5582ccc21.png)
 
 <br>
@@ -235,14 +251,14 @@ git을 사용하기 위해 최초 설정을 진행합니다 .
 한번만 설정하면 나중에는 설정할 필요가 없습니다.
 
 다음 명령어를 Git Bash에서 실행합니다.
-
+<br>
 ```C
 
 git config --global user.name "사용자 이름"
 git config --global user.email "사용자 이메일"
 
 ```
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166198325-06dcb6d4-0204-4449-bbd8-6f0d4744c253.png)
 
 입력이 제대로 되었는 지 다음 명령어를 입력합니다.
@@ -252,7 +268,7 @@ git config --global user.email "사용자 이메일"
 git config --list
 
 ```
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166198435-d6142efe-2875-431b-ae07-86784e8bd072.png)
 
 <br>
@@ -261,25 +277,29 @@ git config --list
 ### 2.6 Git 맛보기
 
 우선 연습용 **작업공간(WorkSpace)을** 하나 만들어보겠습니다. (연습용이 아닌 실제 프로젝트로 진행하셔도 좋습니다.)
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166199291-0409f45d-e6a6-4739-9095-852858926e27.png)
-
+<br>
+<br>
 저는 이름을 **TestWorkSpace** 로 지정하였습니다
 
 해당 폴더안에 **테스트폴더** 와 **테스트소스코드.txt** 파일을 만들었습니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166199534-c2b45d99-e33a-4d32-95b6-408f9934a6ac.png)
-
+<br>
+<br>
 해당 **작업공간(WorkSpace)** 에서 commit을 빠르게 진행하기위해 폴더 내에서 마우스 우클릭 - **Git Bash Here**을 선택합니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166199628-ced50e14-186d-48e0-8c40-fc103e16f76c.png)
-
+<br>
+<br>
 **Git Bash Here**을 선택하면, 해당 위치를 따로 설정하지 않아도 작업공간으로 위치를 설정합니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166199977-cc85e182-a77c-465d-a3d7-4271979d585f.png)
-
+<br>
+<br>
 해당 **작업공간(WorkSpace)** 을 **저장소(Repository)** 로 관리하기 위해 `git init`로 저장소를 초기화 합니다.
-
+<br>
 ```C
 
 git init
@@ -287,15 +307,17 @@ git init
 ```
 
 명령어를 입력하면, Git Bash에는 `Initialized empty Git repository` (비어있는 **저장소(Repository)** 를 생성했다.)라는 문구와 함께 **작업공간(WorkSpace)** 에 .git폴더가 생성됨을 확인 할 수 있습니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166200219-bd052b92-14cc-4e7b-857d-b2d6d0c36ea7.png)
-
+<br>
+<br>
 .git 폴더가 보이지 않는경우 **폴더 위 보기 - 표시/숨기기**의 숨긴항목 체크
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166200379-a9ae6d34-6842-4c38-abda-526aaf65b53b.png)
-
+<br>
+<br>
 그렇다면 저장소도 생성했으니 **커밋(Commit)** 을 해보도록 하겠습니다. **커밋(Commit)** 명령어는 다음과 같습니다.
-
+<br>
 ```C
 
 git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
@@ -303,13 +325,13 @@ git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
 ```
 
 다음과 같이 커밋하겠습니다. `git commit -m "Hello, git"`
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166201925-03a37ec7-f7e6-482e-aad6-8bab85732404.png)
-
+<br>
+<br>
 다음과 같은 오류메세지 `nothing added to commit but untracked files present (use "git add" to track)`과 함께 커밋에 실패했습니다. <br>
 **notthing added to commit** 커밋을 위해 add된 파일이 없습니다. <br>
 **untracked files present** Git에 의해 아직 추적되고있지 않아 버전관리 대상이 아니다. 라는 뜻입니다.
-
 **use** `git add` **to track** git add를 이용해 track 하라고 되어있네요. 한마디로,
 
 커밋을 하기 전에는 반드시 **커밋할 파일들을 미리 지정** 해야합니다. <br>
@@ -317,25 +339,41 @@ git commit -m "어떤 내용을 기록/변경 하는지 메모 남기기"
 해당 작업을 하는 부분이 바로 `add` 입니다.
 
 파일들을 add해보겠습니다. 명령어는 `git add 파일이름.파일확장자` 입니다.
-
+<br>
 ```C
 git add 테스트폴더
 git add 테스트소스코드.txt
 ```
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166207424-d009e6da-d271-4a93-b7f7-bdbb3ededabe.png)
-
+<br>
+<br>
 이렇게 **작업공간(Work Space)** 에서 **로컬 저장소(Local Repository)** 만들기, **커밋(commit)** 까지 진행해보았습니다. <br>
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166229869-a338ba6d-3e03-4bec-aac1-0c9db2fd009b.png)
-
+<br>
+<br>
 아래 사진은 **브랜치(branch)** 에 대한 내용을 제가 오늘 만들어 낸 커밋파일과 맞춰 제작하였습니다.<br>
 최초의 `git init`를 통해 master branch를 생성하고, add 파일 - commit을 통해 하나의 시점을 추가했습니다. <br>
 
 이후 이렇게 버전별로 추가하게 되면 업데이트가 되고, **커밋(Commit)** 할 때 마다 master branch가 계속해서 생성되겠죠! <br>
 브랜치(Branch)에 대한 설명은 추후에 추가하도록 하겠습니다. 브랜치에 대해 자세히 알고싶으시다면 [여기](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)를 참조해주세요. 혹은 [여기](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)를 확인해주시면 좋을 것 같습니다.<br>
 
-![image](https://user-images.githubusercontent.com/104341003/166208633-aa88d461-bf69-43ba-963a-220382306340.png)
+![image](https://user-images.githubusercontent.com/104341003/166297029-55c75c04-ad6c-41d5-80ca-b1c90e0bc9f9.png)
+<br>
+
+> 2022.05.03 추가 : ```git init```를 진행하면 해당 폴더가 자동으로 ```master``` 로 지정이 되나, 2020 10월 이후로 국제사회에서 master/slave, blacklist/whitelist 등 변경하는 운동이 많아짐에 따라 GitHub에서는 ```master```를 ```main```으로 변경되었습니다. 자세한 내용은 [여기](https://kyeoneee.tistory.com/72)를 참조하세요.<br>
+> Local만 사용할 경우 문제가 없지만, GitHub를 연동 하는 경우  우리가 사용하는 Branch도 main으로 변경하여야지만 정상적으로 GitHub에 업로드가 가능합니다.<br>
+
+```C
+
+git branch -M main
+
+```
+명령어를 통해 작업공간을 master에서 main으로 변경합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166297333-a8f065fd-5ef3-4953-9cb6-ddb40ee3581b.png)
+
 
 <br>
 <br>
@@ -365,9 +403,10 @@ ssh-keygen
 기본값을 사용하기위해 그냥 Enter키를 눌러 다음으로 넘어갑니다.
 
 다음으로는 SSH 추가 Password를 지정할 것인지 물어봅니다. 추가 패스워드는 나중에 지정할 수 있으므로 우선 Enter를 **두 번** 눌러 키를 생성합니다.합니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166234591-da503b68-1c47-4f5c-9153-ef29487d2fb4.png)
-
+<br>
+<br>
 생성된 ssh키는
 **개인키(Private Key)** `id_rsa` 와
 **공개키(Secret Key)** `id_rsa.pub` 두개를 생성합니다.
@@ -382,7 +421,8 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ![image](https://user-images.githubusercontent.com/104341003/166235494-e6ad5419-07fc-45d9-8ee2-09b4c834f6c1.png)
-
+<br>
+<br>
 화면에 출력된 키(ssh-rsa ~~ 컴퓨터 이름)를 마우스로 드래그하여 복사합니다.
 
 복사하는 방법은 다음과 같습니다.
@@ -399,46 +439,23 @@ cat ~/.ssh/id_rsa.pub
 [Git Hub](https://github.com/settings/keys)로 이동해 SSH Key를 등록합니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166236847-00e82b20-d692-4391-a358-1ddab4dca501.png)
-
+<br>
 Title에는 사용자 임의로 제목을 입력합니다.
 Key에는 이전에 복사한 **공개키(Secret Key)** 를 붙혀넣기 한 후 Add SSH key를 눌러 등록합니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166237155-da472ca2-b2db-46e4-8ba7-845bbd91433b.png)
-
+<br>
 정상적으로 등록된 경우 아래 사진처럼 추가됩니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166237401-6e4f517f-2021-49c7-a4cc-b9f0e3e5c737.png)
 
-SSH 키가 정상적으로 등록되었는 지 확인하기 위해 `clone` 명령어로 **원격 저장소(Remote Repository)** 를 **로컬 저장소(Local Repository)** 로 복제하겠습니다.
 
-![image](https://user-images.githubusercontent.com/104341003/166238938-e4ed9e63-ef42-4f0c-ab97-03b69b158fa0.png)
+SSH 키가 정상적으로 등록되었는 지 확인하기 위해 원격 저장소(Remote Repository)에서 자신의 로컬 저장소(Local Repository)로 복제가된다면, 정상적으로 연결이 된겁니다.<br>
 
-```C
+[원격 저장소 복제(Clone)하기](#34-github-원격-저장소remote-repository-복제clone하기) <br>
 
-git clone git@github.com:ItsWard/GitHub-getting-started.
 
-```
-
-> git bash 붙혀넣기
->
-> - `Shift` + `Insert`
-
-![image](https://user-images.githubusercontent.com/104341003/166239332-78173e1c-42d9-4458-a002-b7dd9f8dcddb.png)
-
-사용자가 등록한 SSH키와 복사하려는 **저장소(Remote Repository)** 의 이름이 다른경우
-`This key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])?` 와 같이 나오게되는데, yes를 입력합니다.
-
-![image](https://user-images.githubusercontent.com/104341003/166239664-36bd9d3e-2d77-439f-869c-3f4c55bc470f.png)
-
-정상적으로 복제가 완료되었다면 ls 명령어를 이용해 확인이 가능합니다.
-
-![image](https://user-images.githubusercontent.com/104341003/166239545-075b7176-0d7a-4dc8-89bb-411075e1b382.png)
-
-혹은 해당 폴더에 들어가면 **저장소(Repository)** 가 복제 되어있는 것을 볼 수 있습니다.
-
-![image](https://user-images.githubusercontent.com/104341003/166239451-debc6e4b-f211-4e48-b0c2-e9c196672d5b.png)
-
-3.1 GitHub 연동 - 공개키를 GitHub 계정에 등록하기를 실패했을경우, [SSH키를 계정에 등록하였는데도 안되는경우](#ssh키를-계정에-등록하였는데도-안되는경우)를 클릭하여 확인해보세요.
+원격 저장소 복제(Clone) 혹은 공개키를 GitHub 계정에 등록하기를 실패했을경우, [SSH키를 계정에 등록하였는데도 안되는경우](#ssh키를-계정에-등록하였는데도-안되는경우)를 클릭하여 확인해보세요.
 
 <br>
 <br>
@@ -448,20 +465,23 @@ git clone git@github.com:ItsWard/GitHub-getting-started.
 Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서비스입니다. GitHub에서는 GUI환경의 웹에서 **원격 저장소(Remote Repository)** 를 간단하게 생성하고 관리할 수 있습니다.
 
 [GitHub](https://github.com)를 맨처음 로그인 하게되면 다음과 같은 웹페이지가 나옵니다.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166258618-0e270227-5351-4afb-8576-8666370f20f7.png)
-
+<br>
+<br>
 **원격 저장소(Remote Repository)** 를 만들기위해
 
 1. GitHub에 로그인되어있다면 [여기](https://github.com/new)를 클릭하세요.
 2. 혹은 GitHub 메인 홈페이지의 New를 누릅니다.
-
+<br>
 사용할 **원격 저장소의 이름(Repository name)** 을 입력합니다.
 
 > 개발 언어 혹은 환경마다 통상적으로 사용하는 규칙 혹은 스타일이 있습니다.<br> >[여기](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)에 자세하게 나와있으며<br>
 > stack overflow [답변](https://stackoverflow.com/questions/11947587/is-there-a-naming-convention-for-git-repositories)을 참조하세요.
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166259083-0324f2ba-ce41-487d-9fd2-94daed2b6783.png)
+<br>
+<br>
 
 해당 **저장소(Repository)** 의 간단한 설명을 입력합니다.
 
@@ -478,20 +498,107 @@ Github는 원격에서 Git **저장소(Repository)** 를 호스팅 해주는 서
 **Add a README file** : 해당 **저장소(Repository)** 에 대한 자세한 설명이나 사용 방법에 대해 서술하는 파일을 만듭니다.<br>
 **Add .gitignore** : 지정한 확장자 파일을 무시합니다. (Git 버전 관리에서 제외할 파일 목록을 지정하는 파일 지정)<br>
 **Choose a license** : 라이센스를 선택합니다. (자세한 내용은 [여기](https://flyingsquirrel.medium.com/github-license%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%EB%82%98%EC%97%90%EA%B2%8C-%EB%A7%9E%EB%8A%94-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0-ae29925e8ff4)를 확인하세요)<br>
-
+<br>
 ![image](https://user-images.githubusercontent.com/104341003/166262010-d077f4b1-fab2-4100-bd49-a8cc98b887d2.png)
 
 <br>
 <br>
 
-### 3.4 GitHub 원격 저장소(Remote Repository)에 push 하기
+### 3.4 GitHub 원격 저장소(Remote Repository) 복제(Clone)하기
 
-`push`란
+```clone``` 명령어는 **원격 저장소(Remote Repository)** 에 있는 소스코드나 프로젝트들을 복사하여 **로컬 저장소(Local Repository)** 로 가지고오고 싶을 때(복제), 사용하는 명령어 입니다.
 
-## 번외1. GitHub 게시글 제작 방법
+먼저 **복제(Clone)** 하려는 **원격 저장소(Remote Repository)** 에 접속합니다. 
 
+저는 여러분들이 지금 읽고 있는 이 **저장소(Repository)[https://github.com/ItsWard/GitHub-getting-started]** 를 이용해 예제를 들겠습니다.
+
+
+Git과 GitHub가 어떤 방식으로 연결되었는지(**SSH 인증방식/HTTP 인증방식**)에 따라 해당 하는 인증방식을 선택 후 주소를 복사하여 ```git clone```명령어를 입력합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166293321-c743ce7f-a7ec-4830-99d2-033fc8fc7efb.png)
+
+
+
+> SSH 인증방식의 경우
+
+```C
+
+git clone git@github.com:ItsWard/GitHub-getting-started.
+
+```
+<br>
+
+
+> HTTPS 인증방식의 경우
+
+```C
+
+git clone https://github.com/ItsWard/GitHub-getting-started.git
+
+```
+<br>
+
+
+> git bash 붙혀넣기
+>
+>  ```Shift``` + ```Insert```
+
+![image](https://user-images.githubusercontent.com/104341003/166239332-78173e1c-42d9-4458-a002-b7dd9f8dcddb.png)
+<br>
+사용자가 등록한 SSH키와 복사하려는 **저장소(Remote Repository)** 의 이름이 다른경우
+`This key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])?` 와 같이 나오게되는데, ```yes```를 입력합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239664-36bd9d3e-2d77-439f-869c-3f4c55bc470f.png)
+<br>
+정상적으로 복제가 완료되었다면 ls 명령어를 이용해 확인이 가능합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239545-075b7176-0d7a-4dc8-89bb-411075e1b382.png)
+
+혹은 해당 폴더에 들어가면 **저장소(Repository)** 가 복제 되어있는 것을 볼 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166239451-debc6e4b-f211-4e48-b0c2-e9c196672d5b.png)
+ 
+
+### 3.5 GitHub 원격 저장소(Remote Repository)에 push 하기
+
+push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
+
+>```origin``` : **원격 저장소(Remote Repository)** 의 단축이름 <br>
+> Git에서 해당 **저장소(Repository)** 인 GitHub-getting-started 대신 origin으로 사용가능<br>
+> ex) ```git push origin main``` = git push GitHub-getting-started main``` <br>
+한번이라도 ```init```하거나 ```clone```하는경우 자동으로 origin에 **원격 저장소(Remote Repository)** 의 이름이 저장된다고 생각하면 됩니다. <br>
+
+우리는 **2.6 Git 맛보기** 에서 **로컬 저장소(Local Repository)** 에 ```commit``` 하는 것 까지 진행했습니다.
+```push```는 ```commit```된 **로컬 저장소(Local Repository)** 를 **원격 저장소(Remote Repository)** 에 업데이트해 주는 기능입니다. 
+
+준비사항 : 로컬 저장소, 원격 저장소
+
+
+
+>추가 예정입니다.
+<br>
+<br>
+### 3.6 GitHub 원격 저장소(Remote Repository)에서 pull 하기
+>추가 예정입니다.
+<br>
+<br>
+### 3.7 GitHub 게시물 가져오기(Fork)
+>추가 예정입니다.
+```Fork``` 는 **원격 저장소(Remote Repository)** 에 있는 소스코드나 프로젝트들을 복사하여 내 GitHub의 **원격 저장소(Remote Repository)** 로 복제하고 싶을 때, 사용하는 기능입니다.
+<br>
+<br>
+### 3.8 GitHub Pull Request 하기
+>추가 예정입니다.
+<br>
+<br>
+## 번외1. GitHub 블로그 게시글 제작 방법
+>추가 예정입니다.
+<br>
+<br>
 ## 번외2. Git, GitHub 용어 정리
-
+>추가 예정입니다.
+<br>
+<br>
 ## 번외3. 기타 사이트 모음
 
 [Git Tip모음](https://github.com/Integerous/git-tips) - Integerous님 GitHub <br>
@@ -532,7 +639,7 @@ Add email address에 해당 이메일을 다시 입력한 후 Unverified - Resen
 
 ---
 
-**GitHub CLI 설치(Windows)**
+**GitHub CLI 설치(Windows) - HTTPS 인증**
 [여기](https://cli.github.com/)에서 github cli를 다운로드합니다.
 
 ![image](https://user-images.githubusercontent.com/104341003/166245942-a38a338e-5003-4dbc-8456-3f33e4ce8c07.png)
@@ -627,15 +734,8 @@ Enter를 누르지 말고 `! First copy your one-time code`를 미리 메모장�
 ![image](https://user-images.githubusercontent.com/104341003/166250984-c6b71527-e5f1-4dfc-8f6d-eaf0bf8723af.png) <br>
 ![image](https://user-images.githubusercontent.com/104341003/166251196-4bf83f81-9e7d-4341-a341-a88f5ec0adc8.png) <br>
 
-SSH로 설정한 부분과 다르게 복제(clone) 할 경우 아래 사진과 같이 HTTPS 주소로 진행하여야합니다.
 
-![image](https://user-images.githubusercontent.com/104341003/166262829-9b4e7665-ba9d-4181-900e-aed531abf218.png)
 
-```C
-
-git clone https://github.com/ItsWard/GitHub-getting-started.git
-
-```
 
 ![image](https://user-images.githubusercontent.com/104341003/166263280-352979c4-b6ce-4165-b767-29b93eadbe62.png)
 
@@ -645,8 +745,6 @@ git clone https://github.com/ItsWard/GitHub-getting-started.git
 
 혹은 폴더에서 정상적으로 **복제(clone)** 한 것을 확인할 수 있습니다.
 ![image](https://user-images.githubusercontent.com/104341003/166263424-aceceec5-bb38-4154-aab0-fa6f541f650d.png)
-
-##
 
 ## Reference
 
