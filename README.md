@@ -440,7 +440,14 @@ SSH 키가 정상적으로 등록되었는 지 확인하기 위해 ```clone``` �
 
 ![image](https://user-images.githubusercontent.com/104341003/166238938-e4ed9e63-ef42-4f0c-ab97-03b69b158fa0.png)
 
- ```git clone git@github.com:ItsWard/GitHub-getting-started.git```
+ ```C
+ 
+ git clone git@github.com:ItsWard/GitHub-getting-started.
+ 
+ ```
+ > git bash 붙혀넣기
+ >  * ```Shift``` + ```Insert```
+ 
 
 ![image](https://user-images.githubusercontent.com/104341003/166239332-78173e1c-42d9-4458-a002-b7dd9f8dcddb.png)
 
