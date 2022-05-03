@@ -599,6 +599,10 @@ README.md 파일은 .txt 파일을 하나 만들고, 확장자를 .md로 변경�
 
 <br>
 
+README.md 파일을 텍스트 뷰어로 열어, 다음과 같이 수정한 후 저장합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166415878-3c6418e8-17ed-4c72-bbd8-025f360d567f.png)
+
 해당 폴더에서 **마우스 우클릭 - Git Bash Here** 을 클릭해 Git Bash창을 하나 열어주세요.
 
 ![image](https://user-images.githubusercontent.com/104341003/166403616-71f59597-8096-4e68-9ba3-e6a068b0d85b.png)
@@ -714,7 +718,7 @@ git remote -v
 
 GitHub **원격 저장소(Remote Repository)** 를 새로고침해 정상적으로 ```push```되었는 지 확인합니다.
 
-![image](https://user-images.githubusercontent.com/104341003/166412159-285cb975-af8d-492c-ab20-ba89712bbb26.png)
+![image](https://user-images.githubusercontent.com/104341003/166415826-2361da7f-571b-4a30-a72c-d236977761ac.png)
 
 <br>
 <br>
@@ -728,7 +732,36 @@ GitHub **원격 저장소(Remote Repository)** 를 새로고침해 정상적으�
 
 테스트환경을 만들기 위해 **3.5 GitHub 원격 저장소(Remote Repository)에 push 하기** 에서 사용했었던 **저장소(Repository)** 내의 README.md 파일을 수정한 후 커밋해보겠습니다.
 
+README.md 우측의 연필모양을 눌러 파일을 수정합니다.
 
+![image](https://user-images.githubusercontent.com/104341003/166416043-25e3e6f7-8dfd-4a9e-be69-6cbe5298b616.png)
+
+다음과 같이 PULL 테스트 입니다라고 작성한 후, 메모는 test ver2로 입력 후 ```commit``` 합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166416105-fbb70afb-e447-4c53-bb97-16d237a807fe.png)
+<br>
+![image](https://user-images.githubusercontent.com/104341003/166416125-4485eed6-4eb8-4a94-8b75-70d2579338c3.png)
+<br>
+
+해당하는 **로컬 저장소(Local Repository)** 로 이동하여 **마우스 우클릭 - Git Bash Here** 을 클릭해 Git Bash창을 하나 열어주세요.
+
+![image](https://user-images.githubusercontent.com/104341003/166403616-71f59597-8096-4e68-9ba3-e6a068b0d85b.png)
+<br>
+
+```git pull``` 명령어를 통해 **로컬 저장소(Local Repository)** 에 변경사항을 추가하여 병합합니다.
+
+```C
+
+git pull origin main
+
+```
+![image](https://user-images.githubusercontent.com/104341003/166416557-aed0fb98-5709-40ee-be98-5183868cb40b.png)
+
+<br>
+
+내용이 추가된것을 확인 할 수 있습니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/166416587-36e02f13-c371-40ef-b968-3c3153532639.png)
 
 <br>
 <br>
