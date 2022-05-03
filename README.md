@@ -792,11 +792,11 @@ git pull origin main
 [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)<br>
 [GitHub 이모티콘 모음](https://gist.github.com/rxaviers/7360908)<br>
 [마크다운 markdown 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)<br>
-[Git 이름 스타일 가이드](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)
-[매력적인 깃허브 프로필을 만들어보아요](https://butter-shower.tistory.com/142)
-[InteliJ 깃허브 연결](https://brunch.co.kr/@mystoryg/168)
-[좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)
-
+[Git 이름 스타일 가이드](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)<br>
+[매력적인 깃허브 프로필을 만들어보아요](https://butter-shower.tistory.com/142)<br>
+[InteliJ 깃허브 연결](https://brunch.co.kr/@mystoryg/168)<br>
+[좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)<br>
+<br>
 ## Truble Shooting
 
 ### 가입 시 이메일 주소를 잘못 입력하였을 경우
