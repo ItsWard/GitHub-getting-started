@@ -3,7 +3,8 @@
 📝[GitHub](https://github.com/)를 시작해보자.
 
 > 처음 개발을 시작하려보니 깃(Git), 깃허브(GitHub), 커밋(Commit).. 등등 이 중요하답니다.<br>
-> 열심히 자료를 찾아봤지만 정확하게 뭐가뭔지 모르겠고 너무어렵더라구요.<br> > **그래서 제가** 이해된 내용들을 개념 ~ 설치 ~ 사용방법까지 하나씩 추가해보도록 하겠습니다.<br>
+> 열심히 자료를 찾아봤지만 정확하게 뭐가뭔지 모르겠고 너무어렵더라구요.<br> 
+> **그래서 제가** 이해된 내용들을 개념 ~ 설치 ~ 사용방법까지 하나씩 추가해보도록 하겠습니다.<br>
 > Reference를 기반으로 작성할 예정입니다.
 
 ## 0. 목차
@@ -576,6 +577,66 @@ push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
 
 준비사항 : 로컬 저장소, 원격 저장소
 
+간단한 테스트를 위해
+
+임의의 **작업공간(Work Space)** 에 README.md 파일을 하나 제작하였습니다.<br>
+README.md 파일은 .txt 파일을 하나 만들고, 확장자를 .md로 변경하였습니다.<br>
+
+```C
+
+작업공간(Work Space) 폴더 명 : be-simple-git-push-test
+테스트 파일 : README.md
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166403437-261b42ab-4d2e-4844-92f4-4f6cd06818f3.png)
+
+<br>
+
+해당 폴더에서 **마우스 우클릭 - Git Bash Here** 을 클릭해 Git Bash창을 하나 열어주세요.
+
+![image](https://user-images.githubusercontent.com/104341003/166403616-71f59597-8096-4e68-9ba3-e6a068b0d85b.png)
+
+<br>
+
+먼저 해당 작업공간(Work Space)를 로컬 저장소로 만들기 위해 ```git init```를 입력합니다.
+
+```C
+
+git init
+
+```
+
+정상적으로 ```init```가 진행되었다면 .git 폴더가 생성된 것을 확인 할 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166403669-fdb22e20-ee4d-498d-93dd-b6b9711331c0.png)
+
+```commit```을 위해 README.md 파일을 ```add``` 해주세요
+(조금 어려운 내용이지만, ```add```는 ```commit```을 하기위해 untracking 상태의 파일을 staging area로 올리는것을 말합니다. 아직 이해하지 않으셔도 괜찮습니다.)
+
+```C
+
+git add README.md
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166403920-0c9f7e50-1c49-4cb8-a073-00a719fe8e5f.png)
+
+<br>
+
+정상적으로 파일이 add되었는 지 확인하기 위해 ```git status``` 명령어를 이용해 확인합니다. 
+
+```C
+
+git status
+
+```
+
+아래 사진과 같이  ```Changes to be committed: (use "git rm --cached <file>..." to unstage)  new file:   README.md``` <br>
+나와있다면 정상적으로 add되어있는 상태입니다. 
+
+![image](https://user-images.githubusercontent.com/104341003/166403937-7242fdf2-9719-4960-befe-cc63a43356df.png)
+
 
 
 >추가 예정입니다.
@@ -616,6 +677,7 @@ push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
 [마크다운 markdown 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)<br>
 [Git 이름 스타일 가이드](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)
 [매력적인 깃허브 프로필을 만들어보아요](https://butter-shower.tistory.com/142)
+[InteliJ 깃허브 연결](https://brunch.co.kr/@mystoryg/168)
 
 ## Truble Shooting
 
