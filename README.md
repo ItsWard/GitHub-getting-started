@@ -951,7 +951,7 @@ git branch -M main
 ```
 
 
-
+<br>
 
 ## Reference
 
@@ -967,4 +967,3 @@ git branch -M main
 [GitHub Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html) -HeeJeong Kwon님의 블로그<br>
 [누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/stepup/stepup1_3.html)<br>
 
-### 번외1. GitHub 게시글 제작방법
