@@ -15,9 +15,7 @@
 2. [Git 설치 및 설정](#2-git-설치-및-설정)
 3. [GitHub 사용 방법](#3-github-사용-방법)
 
-번외 1. [GitHub 게시글 제작 방법](#번외1-github-게시글-제작-방법)<br>
-번외 2. [Git, GitHub 용어 정리](#번외2-git-github-용어-정리)<br>
-번외 3. [기타](#번외3-기타-사이트-모음)
+번외 1. [기타](#번외1-기타-사이트-모음)
 
 [Truble Shooting](#truble-shooting) -설치 / 설정 / 실행 이슈사항 해결방법
 
@@ -776,17 +774,7 @@ git pull origin main
 <br>
 
 
-## 번외1. GitHub 블로그 게시글 제작 방법
->추가 예정입니다.
-<br>
-<br>
-
-## 번외2. Git, GitHub 용어 정리
->추가 예정입니다.
-<br>
-<br>
-
-## 번외3. 기타 사이트 모음
+## 번외1. 기타 사이트 모음
 
 [Git Tip모음](https://github.com/Integerous/git-tips) - Integerous님 GitHub <br>
 [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)<br>
