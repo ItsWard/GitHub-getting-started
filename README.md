@@ -563,9 +563,15 @@ git clone https://github.com/ItsWard/GitHub-getting-started.git
 ![image](https://user-images.githubusercontent.com/104341003/166239451-debc6e4b-f211-4e48-b0c2-e9c196672d5b.png)
  
 
+
+
+
+
 ### 3.5 GitHub 원격 저장소(Remote Repository)에 push 하기
 
-push 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
+```push```는 **로컬 저장소(Local Repository)** 에 ```commit```되어있는 파일을 **원격 저장소(Remote Repository)** 에 업로드하는것으로 이해해주시면 편합니다.
+
+```push``` 전 알고 넘어가야 할 용어에 대해 소개합니다.<br>
 
 >```origin``` : **원격 저장소(Remote Repository)** 의 단축이름 <br>
 > Git에서 해당 **저장소(Repository)** 인 GitHub-getting-started 대신 origin으로 사용가능 <br>
@@ -599,7 +605,7 @@ README.md 파일은 .txt 파일을 하나 만들고, 확장자를 .md로 변경�
 
 <br>
 
-먼저 해당 작업공간(Work Space)를 로컬 저장소로 만들기 위해 ```git init```를 입력합니다.
+먼저 해당 **작업공간(Work Space)** 를 **로컬 저장소(Local Repository)** 로 만들기 위해 ```git init```를 입력합니다.
 
 ```C
 
@@ -624,7 +630,7 @@ git add README.md
 
 <br>
 
-정상적으로 파일이 add되었는 지 확인하기 위해 ```git status``` 명령어를 이용해 확인합니다. 
+정상적으로 파일이 ```add```되었는 지 확인하기 위해 ```git status``` 명령어를 이용해 확인합니다. 
 
 ```C
 
@@ -633,31 +639,109 @@ git status
 ```
 
 아래 사진과 같이  ```Changes to be committed: (use "git rm --cached <file>..." to unstage)  new file:   README.md``` <br>
-나와있다면 정상적으로 add되어있는 상태입니다. 
+나와있다면 정상적으로 ```add```되어있는 상태입니다. 
 
 ![image](https://user-images.githubusercontent.com/104341003/166403937-7242fdf2-9719-4960-befe-cc63a43356df.png)
 
+해당 내용을 ```commit``` 합니다.
+
+```C 
+
+git commit -m "test ver1"
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166410138-9d1765ee-e0d5-485e-9b7c-8cf5e1c560e8.png)
+
+<br>
+
+```git log```를 통해 정상적으로 저장되어있음을 확인할 수 있습니다. 
+
+```C
+
+git log
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166410172-fa8d6cb0-4138-4a47-a4c7-8c61c0b451ae.png)
+
+<br>
+
+이제 GitHub **저장소(Repository)** 에 해당 프로젝트를 ```push``` 해보겠습니다.<br>
+
+먼저 GitHub에서 **원격 저장소(Remote Repository)** 를 생성합니다. [GitHub저장소 생성방법](#33-gihHub-에서-원격-저장소remote-repository-만들기) <br>
+
+**저장소(Repository)** 주소는 다음과 같이 설정합니다. ```https://github.com/<GitHub유저이름>/<프로젝트이름>.git```<br>
+저의 GitHub 유저이름은 ```ItsWard```이고, 작업공간 이름이 ```be-simple-git-push-test``` 이므로  ```https://github.com/ItsWard/be-simple-git-push-test.git```으로 제작하겠습니다.<br>
 
 
->추가 예정입니다.
+![image](https://user-images.githubusercontent.com/104341003/166411641-717641ee-6ef6-4686-bfd1-f72dc5929f2a.png)
+
+
+생성한 **저장소(Repository)** 의 자신의 인증방법에 맞는 주소를 복사합니다.
+
+>HTTPS
+![image](https://user-images.githubusercontent.com/104341003/166411860-e0656761-c715-416b-9d66-3f34070e97ce.png)
+
+<br>
+
+```C
+
+git remote add origin <HTTPS/SSH 주소>
+
+```
+
+<br>
+
+![image](https://user-images.githubusercontent.com/104341003/166410879-6e0afdd7-c29b-4874-9937-721127233b5c.png)
+
+정상적으로 ```origin``` 설정이 되었는지 확인합니다. 설정이 정상적으로 나온다면, ```push``` 명령어를 통해 **원격 저장소(Remote Repository)** 를 생성하고, 프로젝트를 저장합니다.
+
+```C
+
+git push origin main
+
+```
+
+![image](https://user-images.githubusercontent.com/104341003/166412023-f316256c-65a8-410f-bde7-5e33112d397d.png)
+<br>
+
+```C
+
+git remote -v
+
+```
+
+GitHub **원격 저장소(Remote Repository)** 를 새로고침해 정상적으로 ```push```되었는 지 확인합니다.
+
+![image](https://user-images.githubusercontent.com/104341003/166412159-285cb975-af8d-492c-ab20-ba89712bbb26.png)
+
 <br>
 <br>
 
 ### 3.6 GitHub 원격 저장소(Remote Repository)에서 pull 하기
->추가 예정입니다.
+
+```git pull``` 명령어는 **원격 저장소(Remote Repository)** 에 있는 프로젝트 내용을 가져와 현재 **로컬 저장소(Local Repository)** 와 병합하는 역할을 합니다.<br>
+```git clone```이 **원격 저장소(Remote Repository)** 에 있는 내용을 그대로 가져와 붙혀넣기되어 기존 작업물들이 사라져 직접 복구해야하는 반면, ```git pull```은 기존 작업물은 유지되면서 최신 코드로 업데이트가 가능합니다.<br>
+
+다른사람이 가져오려는 GitHub의 코드를 업데이트 하거나 GitHub를 통해 직접 Commit 했을 경우, 내용을 클라이언트로 내려받을 때 유용하게 사용됩니다.<br>
+
+테스트환경을 만들기 위해 **3.5 GitHub 원격 저장소(Remote Repository)에 push 하기** 에서 사용했었던 **저장소(Repository)** 내의 README.md 파일을 수정한 후 커밋해보겠습니다.
+
+
+
 <br>
 <br>
 
 ### 3.7 GitHub 게시물 가져오기(Fork)
->추가 예정입니다.
+
 ```Fork``` 는 **원격 저장소(Remote Repository)** 에 있는 소스코드나 프로젝트들을 복사하여 내 GitHub의 **원격 저장소(Remote Repository)** 로 복제하고 싶을 때, 사용하는 기능입니다.
+
+
+
 <br>
 <br>
 
-### 3.8 GitHub Pull Request 하기
->추가 예정입니다.
-<br>
-<br>
 
 ## 번외1. GitHub 블로그 게시글 제작 방법
 >추가 예정입니다.
@@ -678,6 +762,7 @@ git status
 [Git 이름 스타일 가이드](http://developer.gaeasoft.co.kr/development-guide/workflow/gitlab-style-guide/)
 [매력적인 깃허브 프로필을 만들어보아요](https://butter-shower.tistory.com/142)
 [InteliJ 깃허브 연결](https://brunch.co.kr/@mystoryg/168)
+[좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)
 
 ## Truble Shooting
 
